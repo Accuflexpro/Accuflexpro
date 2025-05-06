@@ -1,106 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AccuflexPro - Accounting Services in India</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #005599;
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        footer {
-            background-color: #003366;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .service {
-            background: white;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AccuflexPro - Accounting Experts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to right, #f8f8ff, #e6ecf0);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(145deg, #004080, #0066cc);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.3em;
+    }
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      color: #004080;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .card h3 {
+      color: #004080;
+      margin-bottom: 15px;
+    }
+    .card p {
+      line-height: 1.6;
+    }
+    footer {
+      background: #002244;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>AccuflexPro</h1>
-        <p>Expert Accounting & GST Compliance Services in India</p>
-    </header>
+  <header>
+    <h1>AccuflexPro</h1>
+    <p>Professional Accounting & GST Services Across India</p>
+  </header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>GST Compliance</h3>
+        <p>Filing GSTR-1, 3B, 9, and audits with full reconciliation and expert assistance.</p>
+      </div>
+      <div class="card">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>End-to-end bookkeeping and ledger services tailored to your business.</p>
+      </div>
+      <div class="card">
+        <h3>Income Tax Returns</h3>
+        <p>Preparation and filing of ITRs for individuals, firms, and corporations.</p>
+      </div>
+      <div class="card">
+        <h3>Startup & Business Setup</h3>
+        <p>Assistance with company registration, PAN, TAN, and tax advisory.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>GST Return Filing</h3>
-                <p>Timely and accurate filing of GSTR-1, GSTR-3B, GSTR-9, and GSTR-9C.</p>
-            </div>
-            <div class="service">
-                <h3>Bookkeeping</h3>
-                <p>Daily accounting, reconciliation, and ledger maintenance tailored to your business.</p>
-            </div>
-            <div class="service">
-                <h3>Income Tax Filing</h3>
-                <p>Personal and corporate income tax return preparation and filing.</p>
-            </div>
-            <div class="service">
-                <h3>Advisory & Support</h3>
-                <p>Expert consultation on tax planning, audits, and regulatory updates.</p>
-            </div>
-        </div>
-    </section>
+  <section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p style="max-width: 800px; margin: auto; font-size: 1.1em; text-align: center;">
+      AccuflexPro is committed to delivering top-tier financial services with an emphasis on accuracy, compliance, and client satisfaction. Based in India, we serve clients across industries with modern tools and professional integrity.
+    </p>
+  </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At AccuflexPro, we specialize in Indian tax and accounting services. With years of experience in GST compliance, bookkeeping, and audits, we provide personalized solutions to businesses across India.</p>
-    </section>
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align: center; font-size: 1.1em;">
+      📧 Email: contact@accuflexpro.com<br>
+      📞 Phone: +91-98765-43210<br>
+      📍 Location: Chandigarh, India
+    </p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@accuflexpro.com</p>
-        <p>Phone: +91-98765-43210</p>
-        <p>Location: Chandigarh, India</p>
-    </section>
-
-    <footer>
-        &copy; 2025 AccuflexPro | All rights reserved.
-    </footer>
+  <footer>
+    &copy; 2025 AccuflexPro | Built with passion for Indian businesses 💼
+  </footer>
 </body>
 </html>
